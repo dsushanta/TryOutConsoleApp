@@ -15,18 +15,31 @@ namespace TryOutConsoleApp
             this.tutorialId = tutorialId;
             this.tutorialName = tutorialName;
         }
-        public int getTutorialId() {
-            return tutorialId;
+        
+        public int tutorialIdProperty
+        {
+            get
+            {
+                return tutorialId;
+            }
+            set
+            {
+                tutorialId = value;
+            }
         }
-        public string getTutorialName(string name) {
-            return tutorialName;
+
+        public string tutorialNameProperty
+        {
+            get
+            {
+                return tutorialName;
+            }
+            set
+            {
+                tutorialName = value;
+            }
         }
-        public void setTutorialId(int id) {
-            tutorialId = id;
-        }
-        public void setTutorialName(string name) {
-            tutorialName = name;
-        }
+
         public override string ToString() {
             return tutorialId + " : " + tutorialName;
         }
